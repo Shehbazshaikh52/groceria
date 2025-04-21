@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tag -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Shaikh Shehbaz Wahab" />
+  <meta name="description" content="Shop fresh groceries from the comfort of your home with Groceria - your one-stop online grocery store. Easy ordering, fast delivery, and quality products guaranteed." />
+  <!-- Web Page Title -->
+  <title>Homepage | Groceria - Online Grocery Shop</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon" />
+  <!-- Font Awesome : CSS -->
+  <link rel="stylesheet" href="./plugins/font-awesome/css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css" />
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="./plugins/owl-carousel/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./plugins/owl-carousel/css/owl.theme.default.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/styles3.css" />
+  <!-- Inline CSS for Add to Cart Button -->
+  <style>
+    .add-to-cart {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Scroll-to-Top Button -->
+  <button id="top" type="button" class="btn btn-scroll-top">
+    <i class="fas fa-angle-up"></i>
+  </button>
+  <!-- HEADER -->
+  <header class="bg-light py-2">
+    <div class="container d-md-flex top-header align-items-center">
+      <div class="d-flex flex-wrap align-items-center">
+        <i class="fas fa-phone me-2"></i>
+        <a href="tel:+91 8369384167" class="text-dark text-decoration-none me-4">+91 8369384167</a>
+        <i class="fas fa-envelope me-2"></i>
+        <a href="mailto:groceria@gmail.com" class="text-dark text-decoration-none me-4">groceria@gmail.com</a>
+      </div>
+      <div class="d-flex flex-wrap align-items-center">
+        <i class="fas fa-map-marker-alt me-2"></i>
+        <span class="text-dark me-4">Jitendra Road, Malad(E)-400097</span>
+        <i class="fas fa-clock me-2"></i>
+        <span class="text-dark">9AM to 11PM</span>
+      </div>
+    </div>
+  </header>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md bg-light navbar-light shadow-sm sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/images/logo.png" width="150" alt="" />
+      </a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="category.html">Category</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="navbar-nav icon-menu ms-auto">
+          <li class="nav-item"><a class="btn btn-outline-primary rounded-circle" href="#"><i class="fas fa-search"></i></a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary rounded-circle position-relative" href="wishlist.html"><i class="fas fa-heart"></i><span class="badge bg-primary rounded-circle position-absolute" style="top: -12px; right: -8px;">0</span></a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary rounded-circle position-relative" href="cart.html"><i class="fas fa-shopping-cart"></i><span class="badge bg-primary rounded-circle position-absolute cart-badge" style="top: -12px; right: -8px;">0</span></a></li>
+          <li class="nav-item"><a class="btn btn-outline-primary rounded-circle" href="./auth/index.html"><i class="fas fa-user"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- CAROUSEL -->
+  <div id="demo" class="carousel slide delivary" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <p class="py-2 m-0 text-center">
+          <i class="fas fa-truck-fast"></i>
+          <span>Delivery charges will be <span class="badge bg-secondary">Free</span> only in <b>Jitendra Road</b></span>
+        </p>
+      </div>
+      <div class="carousel-item">
+        <p class="py-2 m-0 text-center">
+          <i class="fas fa-truck-fast"></i>
+          <span>Delivery charges will be <span class="badge bg-secondary">BDT. 60/-</span> only in <b>Malad(E)</b></span>
+        </p>
+      </div>
+      <div class="carousel-item">
+        <p class="py-2 m-0 text-center">
+          <i class="fas fa-truck-fast"></i>
+          <span>Delivery charges will be <span class="badge bg-secondary">BDT. 120/-</span> outside <b>Malad(E)</b></span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- MAIN CONTENT -->
+  <main>
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/slides/0212535.jpeg" class="d-block w-100" alt="Promotional slide 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/slides/0273894.jpeg" class="d-block w-100" alt="Promotional slide 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/slides/britania cake.webp" class="d-block w-100" alt="Britania Cake slide" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="py-5">
+      <div class="container featured position-relative">
+        <h3 class="position-absolute">Newest Arrivals</h3>
+        <div class="featured-left owl-carousel owl-theme pt-5">
+          <div class="item">
+            <div class="card">
+              <div class="card-body text-center">
+                <a href="product.html">
+                  <img src="./assets/images/products/cat-01/arzish-ajwa-al-madina-dates-500-gm.webp" class="img-fluid" alt="Arzish Ajwa Al Madina Dates 500gm" />
+                </a>
+                <button class="btn btn-primary add-to-cart" data-product-id="product-1" data-product-name="Arzish Ajwa Al Madina Dates 500gm">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-body text-center">
+                <a href="product.html">
+                  <img src="./assets/images/products/cat-01/arzish-mariam-al-madina-dates-500-gm.webp" class="img-fluid" alt="Arzish Mariam Al Madina Dates 500gm" />
+                </a>
+                <button class="btn btn-primary add-to-cart" data-product-id="product-2" data-product-name="Arzish Mariam Al Madina Dates 500gm">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-body text-center">
+                <a href="product.html">
+                  <img src="./assets/images/products/cat-02/harpic-liquid-toilet-cleaner-750-ml-lizol-citrus-floor-cleaner-500-ml-free-mug-2-pcs.webp" class="img-fluid" alt="Harpic Toilet Cleaner 750ml + Lizol 500ml" />
+                </a>
+                <button class="btn btn-primary add-to-cart" data-product-id="product-3" data-product-name="Harpic Toilet Cleaner 750ml + Lizol 500ml">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-body text-center">
+                <a href="product.html">
+                  <img src="./assets/images/products/cat-03/urban beard.jpg" class="img-fluid" alt="Urban Beard" />
+                </a>
+                <button class="btn btn-primary add-to-cart" data-product-id="product-4" data-product-name="Urban Beard">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-body text-center">
+                <a href="product.html">
+                  <img src="./assets/images/products/cat-03/dove-shampoo-healthy-grow-free-dove-intense-repair-conditioner-50-ml-340-ml.webp" class="img-fluid" alt="Dove Shampoo 340ml + Conditioner 50ml" />
+                </a>
+                <button class="btn btn-primary add-to-cart" data-product-id="product-5" data-product-name="Dove Shampoo 340ml + Conditioner 50ml">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <div class="card-body text-center">
+                <a href="product.html">
+                  <img src="./assets/images/products/cat-06/Dairy milk.webp" class="img-fluid" alt="Cadbury Dairy Milk" />
+                </a>
+                <button class="btn btn-primary add-to-cart" data-product-id="product-6" data-product-name="Cadbury Dairy Milk">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container"><hr></div>
+    <!-- Other sections like Best Selling follow the same pattern -->
+    <section class="py-5 my-5">
+      <div class="container">
+        <div class="card card-display">
+          <div class="card-body p-0 m-0">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                <h5 class="card-title text-white text-center ps-3 pe-3 pt-1 pb-2">Foods & Beverages</h5>
+                <ul class="navbar-nav cat-nav ms-1 me-1">
+                  <a href="category.html" class="nav-link cat-link"><i class="fas fa-hand-point-right"></i><span class="ps-2">Dates</span></a>
+                  <a href="category.html" class="nav-link cat-link"><i class="fas fa-hand-point-right"></i><span class="ps-2">Sauces</span></a>
+                  <a href="category.html" class="nav-link cat-link"><i class="fas fa-hand-point-right"></i><span class="ps-2">Breakfast</span></a>
+                  <a href="category.html" class="nav-link cat-link"><i class="fas fa-hand-point-right"></i><span class="ps-2">Chocolates</span></a>
+                  <a href="category.html" class="nav-link cat-link"><i class="fas fa-hand-point-right"></i><span class="ps-2">Beverages</span></a>
+                  <a href="category.html" class="nav-link cat-link"><i class="fas fa-hand-point-right"></i><span class="ps-2">Spices Powder</span></a>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9 ps-0 ms-0">
+                <div class="grid py-2">
+                  <div class="card p-0 m-0">
+                    <div class="card-body p-0 m-0 text-center">
+                      <div class="card-image">
+                        <a href="product.html" class="nav-link">
+                          <img src="./assets/images/products/cat-01/arzish-ajwa-al-madina-dates-500-gm.webp" class="card-img-top" alt="Arzish Ajwa Al Madina Dates 500gm" />
+                        </a>
+                      </div>
+                      <button class="btn btn-primary add-to-cart" data-product-id="product-1" data-product-name="Arzish Ajwa Al Madina Dates 500gm">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="card p-0 m-0">
+                    <div class="card-body p-0 m-0 text-center">
+                      <div class="card-image">
+                        <a href="product.html" class="nav-link">
+                          <img src="./assets/images/products/cat-01/arzish-mariam-al-madina-dates-500-gm.webp" class="card-img-top" alt="Arzish Mariam Al Madina Dates 500gm" />
+                        </a>
+                      </div>
+                      <button class="btn btn-primary add-to-cart" data-product-id="product-2" data-product-name="Arzish Mariam Al Madina Dates 500gm">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="card p-0 m-0">
+                    <div class="card-body p-0 m-0 text-center">
+                      <div class="card-image">
+                        <a href="product.html" class="nav-link">
+                          <img src="./assets/images/products/cat-01/ruchi-tomato-ketchup-350-gm.webp" class="card-img-top" alt="Ruchi Tomato Ketchup 350gm" />
+                        </a>
+                      </div>
+                      <button class="btn btn-primary add-to-cart" data-product-id="product-7" data-product-name="Ruchi Tomato Ketchup 350gm">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="card p-0 m-0">
+                    <div class="card-body p-0 m-0 text-center">
+                      <div class="card-image">
+                        <a href="product.html" class="nav-link">
+                          <img src="./assets/images/products/cat-01/Mirch powder.jpg" class="card-img-top" alt="Mirch Powder" />
+                        </a>
+                      </div>
+                      <button class="btn btn-primary add-to-cart" data-product-id="product-8" data-product-name="Mirch Powder">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="card p-0 m-0">
+                    <div class="card-body p-0 m-0 text-center">
+                      <div class="card-image">
+                        <a href="product.html" class="nav-link">
+                          <img src="./assets/images/products/cat-01/nestle-koko-krunch-chocolate-cereal-box-300-gm.webp" class="card-img-top" alt="Nestle Koko Krunch 300gm" />
+                        </a>
+                      </div>
+                      <button class="btn btn-primary add-to-cart" data-product-id="product-9" data-product-name="Nestle Koko Krunch 300gm">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="card p-0 m-0">
+                    <div class="card-body p-0 m-0 text-center">
+                      <div class="card-image">
+                        <a href="product.html" class="nav-link">
+                          <img src="./assets/images/products/cat-01/nestle-nescafe-classic-instant-coffee-jar-50-gm.webp" class="card-img-top" alt="Nestle Nescafe Classic 50gm" />
+                        </a>
+                      </div>
+                      <button class="btn btn-primary add-to-cart" data-product-id="product-10" data-product-name="Nestle Nescafe Classic 50gm">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="card p-0 m-0">
+                    <div class="card-body p-0 m-0 text-center">
+                      <div class="card-image">
+                        <a href="product.html" class="nav-link">
+                          <img src="./assets/images/products/cat-01/cadbury-dairy-milk-silk-plain-chocolate-bar-150-gm.webp" class="card-img-top" alt="Cadbury Dairy Milk Silk 150gm" />
+                        </a>
+                      </div>
+                      <button class="btn btn-primary add-to-cart" data-product-id="product-11" data-product-name="Cadbury Dairy Milk Silk 150gm">Add to Cart</button>
+                    </div>
+                  </div>
+                  <div class="card p-0 m-0">
+                    <div class="card-body p-0 m-0 text-center">
+                      <div class="card-image">
+                        <a href="product.html" class="nav-link">
+                          <img src="./assets/images/products/cat-01/Tata salt.jpg" class="card-img-top" alt="Tata Salt" />
+                        </a>
+                      </div>
+                      <button class="btn btn-primary add-to-cart" data-product-id="product-12" data-product-name="Tata Salt">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Other sections (Best Selling, Personal Care, Health & Wellness) follow the same pattern -->
+    <!-- FOOTER WIDGETS -->
+    <section class="py-5" style="background-color: rgb(228, 227, 227);">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="position-relative">
+              <img src="./assets/images/logo.png" width="250" alt="Groceria Logo">
+              <p class="text-justify text-xs mt-2 mb-3">
+                "Shop fresh groceries from the comfort of your home with Groceria - your one-stop online grocery store. Easy ordering, fast delivery, and quality products guaranteed."
+              </p>
+              <div class="footer-info">
+                <p class="text-xs py-0 my-1">
+                  <span><i class="fas fa-phone"></i></span>
+                  <span class="ps-3 pe-2">:</span>
+                  <span>+91 8369384167</span>
+                </p>
+                <p class="text-xs py-0 my-1">
+                  <span><i class="fas fa-envelope"></i></span>
+                  <span class="ps-3 pe-2">:</span>
+                  <span>groceria@gmail.com</span>
+                </p>
+                <p class="text-xs py-0 my-1">
+                  <span><i class="fas fa-location-dot"></i></span>
+                  <span class="ps-3 pe-2">:</span>
+                  <span>Jitendra Road, Malad(E)-400097</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="row">
+              <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="widget">
+                  <h6>Informations</h6>
+                  <ul class="navbar-nav text-xs mt-3">
+                    <a href="./info/index.html" class="nav-link py-1"><i class="fas fa-hand-point-right"></i><span class="ps-2">Disclaimer</span></a>
+                    <a href="./blog/index.html" class="nav-link py-1"><i class="fas fa-hand-point-right"></i><span class="ps-2">Blog Page</span></a>
+                    <a href="./info/terms.html" class="nav-link py-1"><i class="fas fa-hand-point-right"></i><span class="ps-2">Terms of Service</span></a>
+                    <a href="./info/faq.html" class="nav-link py-1"><i class="fas fa-hand-point-right"></i><span class="ps-2">F.A.Q</span></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="widget">
+                  <h6>Featured</h6>
+                  <ul class="navbar-nav text-xs mt-3">
+                    <a href="category.html" class="nav-link py-1"><i class="fas fa-hand-point-right"></i><span class="ps-2">Home & Cleaning</span></a>
+                    <a href="category.html" class="nav-link py-1"><i class="fas fa-hand-point-right"></i><span class="ps-2">Beauty Products</span></a>
+                    <a href="category.html" class="nav-link py-1"><i class="fas fa-hand-point-right"></i><span class="ps-2">Kitchen Appliances</span></a>
+                    <a href="category.html" class="nav-link py-1"><i class="fas fa-hand-point-right"></i><span class="ps-2">Health Products</span></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="widget">
+                  <h6>Our Policies</h6>
+                  <ul class="navbar-nav text-xs mt-3">
+                    <a href="./policy/index.html" class="nav-link py-1"><i class="fas fa-hand-point-right"></i><span class="ps-2">Privacy Policy</span></a>
+                    <a href="./policy/shipping.html" class="nav-link py-1"><i class="fas fa-hand-point-right"></i><span class="ps-2">Shipping Policy</span></a>
+                    <a href="./policy/return.html" class="nav-link py-1"><i class="fas fa-hand-point-right"></i><span class="ps-2">Return Policy</span></a>
+                    <a href="./policy/refund.html" class="nav-link py-1"><i class="fas fa-hand-point-right"></i><span class="ps-2">Refund Policy</span></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="newsletter">
+              <h5>E-mail us...</h5>
+              <form action="" class="form-floating">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="name" placeholder="John Doe" />
+                  <label for="name">Full Name</label>
+                </div>
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="email" placeholder="Johndoe@gmail.com" />
+                  <label for="email">Email Address</label>
+                </div>
+                <div class="btn-group d-grid mt-3">
+                  <button type="submit" class="btn btn-outline-primary"><i class="fas fa-envelope"></i><span class="ps-2">Send</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER BAR -->
+    <footer class="py-2" style="background-color: rgb(228, 227, 227);">
+      <div class="container">
+        <div class="d-flex social-media flex-wrap align-items-center">
+          <a href="https://www.facebook.com/share/1BNjDNhNdd/" class="btn btn-outline-secondary rounded-circle" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="http://linkedin.com/in/shabaz-shaikh-0881a5249" class="btn btn-outline-secondary rounded-circle" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/__.shehbaz_shk" class="btn btn-outline-secondary rounded-circle" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="./plugins/jQuery/jquery-3.6.4.min.js"></script>
+    <!-- Font Awesome : JS -->
+    <script src="./plugins/font-awesome/js/all.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="./plugins/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/scripts3.js"></script>
+    <script src="./assets/js/cart.js"></script>
+  </body>
+</html>
